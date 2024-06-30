@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Managment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee System</h1>
+        <form id="registerForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="name">Telefono:</label>
+            <input type="text" id="phone" name="phone" required>
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>User Operations</h2>
+        <label for="userId">ID de Usuario:</label>
+        <input type="number" id="userId" name="userId" required>
+        <div class="user-buttons">
+            <button onclick="getUser()">Obtener Usuario</button>
+            <button onclick="updateUser()">Actualizar Usuario</button>
+            <button onclick="deleteUser()">Eliminar Usuario</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
